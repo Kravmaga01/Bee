@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    float: inline-start;
+    background-color: aqua;
+}
+.form{
+    float: center;
+    
+    height: 100px;
+    width: 100%;
+}
+.form{
+padding-left: 1;
+}
+.request{
+    float: left;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.288);
+    
+}
+.taskP{
+    float: left;
+    width: 25%;
+    list-style-position: inside;
+}
+.taskE{
+    float: left;
+    width: 25%;
+}
+.taskT{
+    float: left;
+    width: 25%;
+}
+.taskC{
+    float: left;
+    width: 25%;
+    
+}

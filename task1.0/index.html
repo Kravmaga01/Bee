@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tareas.js"></script>
+    <script src="function.js"></script>
+    <script src="controller.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <article class="container">
+        <Section class="form">
+            <!--input-->
+            <aside>
+                <form style="text-align:center;">
+                    <ul><label for="Nombre">Nombre</label>
+                        <input type="text" placeholder="Nombre de la tarea" id="Nombre">
+                    </ul>
+                    <ul>
+                        <label for="fecha">Fecha</label>
+                        <input type="date" placeholder="fecha" id="fecha">
+                    </ul>
+                    <ul> <label for="descrip">Descripción</label>
+                        <input type=" text" placeholder="Descripción" id="descrip">
+                    </ul>
+                    <ul> <select name="estado" id="estado">
+                            <option value="pendiente">Pendiente</option>
+                            <option value="emproceso">Emproceso</option>
+                            <option value="terminada">Terminada</option>
+                            <option value="cancelada">Cancelada</option>
+                        </select>
+                    </ul>
+                    <input type="button" value="guardar" onclick=guardar()>
+                </form>
+            </aside>
+        </Section>
+        <section class="request"> 
+            <!--output-->
+            <div id="taskP" class="taskP">
+                <h2> Pendientes</h2><br>
+            </div>
+            <div id="taskE"class="taskE">
+                <h2>Emproceso</h2><br>
+
+            </div>
+            <div id="taskT"class="taskT"><h2>Terminada</h2>
+            <br>
+            </div>
+            <div id="taskC"class="taskC"><h2>cancelada</h2><br>
+            </div>
+
+        </section>
+    </article>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

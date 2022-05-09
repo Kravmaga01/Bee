@@ -1,0 +1,159 @@
+¿Qué es una función?
+
+Una función js es un Object de tipo function, la función  contiene unas lineas de codigo que solo se pueden acceder a ellas invocandolas.
+
+ejemplo:
+ TS
+
+const frisClosure = (function myClosure() {
+  let contador: number = 1;
+  function aumentar() {
+    contador += 1;
+  }
+  function disminuir() {
+    contador -= 1;
+  }
+  function valor(): number {
+    return contador;
+  }
+  return {
+    aumentar,
+    disminuir,
+    valor,
+  };
+})();
+
+este función esta declarada pero no ha sido invocada
+
+para ejecutar las el codigo contenido en la función hay que invocarla :
+
+JS
+
+const sumarRestar = (function () {
+  let contador = 0;
+  function decrementar() {
+    contador -= 1;
+  }
+
+  function aumentar() {
+    contador += 1;
+  }
+
+  function valor() {
+    return contador;
+  }
+
+  return {
+    decrementar,
+    aumentar,
+    valor}
+})();
+
+si llamaramos a la const saludar obtendriamos el valor:
+
+>{decrementar: ƒ, aumentar: ƒ, valor: ƒ}
+
+si miramos los valores podemos observar que tenemos como valor un arreglo de funiones anidadas
+podriamos ver sus valores:
+
+aumentar: ƒ aumentar()
+decrementar: ƒ decrementar()
+valor: ƒ valor()
+[[Prototype]]: Object
+
+recordando que todo en js es un Object podemos acceder  a ella como propiedad del Object const sumarRestar
+
+sumarRestar.valor();
+
+obtendriamos por salida el numero : 0.
+
+¿Qué es el cierre (Closure) de una función?
+
+una Closure es tipo espcial de Object que combina dos cosas: una funcion con el ambito donde se creo.
+para poder que una Closure se necesitan un contador que sera la variable que se encadenara, una funcion y un retorno.
+
+ejemplo:
+
+En este ejemplo podemos ver un encadenamiento o Closure de parte de la función a la variables contador.
+
+                     //notese que el valor de la funcion esta dentro de parentecis
+const frisClosure = (function myClosure() { // se declara la función
+  let contador: number = 1;  // este es el contador de funcion Closure
+  function aumentar() {   // esta funcion esta encadenada a la variable contador
+    contador += 1;
+  }
+  function disminuir() { // esta funcion esta encadenada a la variable contador 
+    contador -= 1;
+  }
+  function valor(): number { // esta funcion esta encadenada a la variable contador 
+    return contador;
+  }
+  return { //retorna las funciones para poder ser ejecutadas 
+    aumentar,
+    disminuir,
+    valor,
+  };
+})();<-notese que la funcion se ejecuta al final,
+
+
+
+si  la variable esta en un scope superior al que esta definido las variables igual se encadenaran a esta varieble
+
+let contador: number = 1;  // este es el contador de funcion Closure  esta definida fuera de el scope de la funcion
+const frisClosure = (function myClosure() { // se declara la función
+  
+  function aumentar() {   // esta funcion esta encadenada a la variable contador
+    contador += 1;
+  }
+  function disminuir() { // esta funcion esta encadenada a la variable contador 
+    contador -= 1;
+  }
+  function valor(): number { // esta funcion esta encadenada a la variable contador 
+    return contador;
+  }
+  return { //retorna las funciones para poder ser ejecutadas 
+    aumentar,
+    disminuir,
+    valor,
+  };
+})();<-notese que la funcion se ejecuta al final,
+
+¿Qué palabra reservada se utiliza para devolver un valor desde una función?
+
+la palabra reservada return.
+
+ejemplo:
+
+function  divicion(){
+ let a =1;
+ let b =3;
+ let c =a //b; 
+ return c;    
+}
+ en este momento  la funcion divicion tiene el valor de: 1
+
+para ver el valor en consola solo se necesitan llamar la funcion
+
+
+
+¿Qué es una función Recursiva?
+
+Es una funcion que se llama asi misma. lo pordemos ver en este ejemplo
+
+const frisClosure = (function myClosure() { 
+  let contador: number = 1; 
+  function aumentar() {   
+    contador += 1;
+  }
+  function disminuir() { 
+    contador -= 1;
+  }
+  function valor(): number { 
+    return contador;
+  }
+  return { 
+    aumentar,
+    disminuir,
+    valor,
+  };
+})();<-notese que la funcion se ejecuta al final,
