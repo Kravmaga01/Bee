@@ -5,8 +5,7 @@
   "main": "closures.js",
   "scripts": {
     "tsc": "tsc",
-    "dev":"ts-node-dev src/closures.ts",
-    "dev1":"ts-node-dev src/Ejercicios-ts.ts"
+    "dev":"ts-node-dev TASK2/task2.1/array.ts"
   },
   "keywords": [],
   "author": "",
