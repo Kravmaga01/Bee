@@ -5,8 +5,9 @@
   "main": "closures.js",
   "scripts": {
     "tsc": "tsc",
-    "dev":"ts-node-dev TASK2/task2.1/array.ts"
-  },
+    "dev":"ts-node-dev TASK2/task2.1/array.ts",
+    "dev1": "ts-node-dev TASK2/task2.1/borrador.ts"
+  }
   "keywords": [],
   "author": "",
   "license": "ISC",
