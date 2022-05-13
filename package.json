@@ -6,8 +6,9 @@
   "scripts": {
     "tsc": "tsc",
     "dev":"ts-node-dev TASK2/task2.1/array.ts",
-    "dev1": "ts-node-dev TASK2/task2.1/borrador.ts"
-  }
+    "dev1": "ts-node-dev TASK2/borrador.ts",
+    "dev2": "ts-node-dev TASK2/task2.2.1/array.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

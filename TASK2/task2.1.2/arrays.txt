@@ -1,0 +1,157 @@
+¿Qué significa que un string sea inmutable?
+
+para tener esto comprender mejor de que se trata esto hay que recordar que todo en js es un objeto y  los objetos tiene metodos.
+
+en js un texto es un objeto tipo array. 
+por eso podemos acceder al indice de un string como en un agrrego.
+
+let  name:string = "alex";
+console.log(name[0]);// a
+
+un string inmutable no puede cambiar  su valor o contanido.
+
+Esto puede aplicar en casos como   cuando usamos metodo de tipo string como toUpperCase,toLowerCase,split,indexOf.
+
+ que al ser usados los valores de el string que se este ejevcutando no se modifica, sino que retorna una nueva cadena  string con los cambios generados.
+ 
+ ¿Qué estructura de datos usa el computador para representar un string?
+
+ para la computadora un string es un array  o  secuencia de carracteres.
+
+ Es decir  cuando declaras una variable de tipo string  realemnete estas declarando un array de caracteres.
+
+ ejemplo:
+
+ let saludo:string ="hola";
+  para la computadora seria algo asi:
+  
+let saludo:string = [h,o,l,a];
+
+¿Qué diferencias puedes señalar entre concatenación e interpolación?
+
+La diferencia que perdsivo entre concatenación e interpolación es;
+
+la univa diferencia que noto es el formato, siento que con los template se da formato de una manera mas senciall
+
+ejemplo
+let a:string ="2";
+let b:string ="3";
+let c:string = a + b;
+
+console.log(c);// daria 23 
+
+si quisiera que c tubiera un espacio entre el 2 y el tres tendria que modificarlo de esta manera 
+ 
+let a:string ="2";
+let b:string ="3";
+let c:string = a +"  "+ b;
+
+console.log(c);// daria 2  3 
+
+con el template se crea de una manera más sencialla estos espacio
+
+let a:string ="2";
+let b:string ="3";
+let c:string = `${a}  ${b}`;
+
+console.log(c);// daria 2 3 
+
+Describe en tus propias palabras que significa que ciertos métodos pertenezcan al prototipo del string
+
+js es un lenguaje que esta orientado tanto a eventos como a prototipos.
+un prototipo es un objeto que contiene una proidiedad constructor
+
+ejemplo: 
+
+si tenemos una variable a 
+
+let a = "Hola";
+
+console.table(Object.getPrototypeOf(a));// ejemplo basado en terminal de google 
+
+
+nos daria este valor:
+mostarandonos las funcionalidades del objeto a 
+
+
+VM556:3 
+String {'', constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, …}
+anchor: ƒ anchor()
+at: ƒ at()
+big: ƒ big()
+blink: ƒ blink()
+bold: ƒ bold()
+charAt: ƒ charAt()
+charCodeAt: ƒ charCodeAt()
+codePointAt: ƒ codePointAt()
+concat: ƒ concat()
+constructor: ƒ String()
+endsWith: ƒ endsWith()
+fixed: ƒ fixed()
+fontcolor: ƒ fontcolor()
+fontsize: ƒ fontsize()
+includes: ƒ includes()
+indexOf: ƒ indexOf()
+italics: ƒ italics()
+lastIndexOf: ƒ lastIndexOf()
+length: 0
+link: ƒ link()
+localeCompare: ƒ localeCompare()
+match: ƒ match()
+matchAll: ƒ matchAll()
+normalize: ƒ normalize()
+padEnd: ƒ padEnd()
+padStart: ƒ padStart()
+repeat: ƒ repeat()
+replace: ƒ replace()
+replaceAll: ƒ replaceAll()
+search: ƒ search()
+slice: ƒ slice()
+small: ƒ small()
+split: ƒ split()
+startsWith: ƒ startsWith()
+strike: ƒ strike()
+sub: ƒ sub()
+substr: ƒ substr()
+substring: ƒ substring()
+sup: ƒ sup()
+toLocaleLowerCase: ƒ toLocaleLowerCase()
+toLocaleUpperCase: ƒ toLocaleUpperCase()
+toLowerCase: ƒ toLowerCase()
+toString: ƒ toString()
+toUpperCase: ƒ toUpperCase()
+trim: ƒ trim()
+trimEnd: ƒ trimEnd()
+trimLeft: ƒ trimStart()
+trimRight: ƒ trimEnd()
+trimStart: ƒ trimStart()
+valueOf: ƒ valueOf()
+Symbol(Symbol.iterator): ƒ [Symbol.iterator]()
+[[Prototype]]: Object // esta parte es lo importante.
+[[PrimitiveValue]]: ""
+
+
+lo mas importante es que alfinal a parece un apartado que dice 
+[[prototype]]:object
+
+si  accedemos al ontendremos lo siguente 
+
+constructor: ƒ Object()
+hasOwnProperty: ƒ hasOwnProperty()
+isPrototypeOf: ƒ isPrototypeOf()
+propertyIsEnumerable: ƒ propertyIsEnumerable()
+toLocaleString: ƒ toLocaleString()
+toString: ƒ toString()
+valueOf: ƒ valueOf() // notese que valueOf es un metodo que pertenece a prototype
+__defineGetter__: ƒ __defineGetter__()
+__defineSetter__: ƒ __defineSetter__()
+__lookupGetter__: ƒ __lookupGetter__()
+__lookupSetter__: ƒ __lookupSetter__()
+__proto__: (...)
+
+estos ton los metodos de prototipe, como podemos ver que la hay diferentes metodos, entre ellos la funcion vuleOf.
+
+ejemplo:
+
+a.valueOf();
+al hacer esto no estamos accediendo al metodo del objeto a sino al prototype de el objeto a

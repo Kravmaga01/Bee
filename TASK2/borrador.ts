@@ -1,2 +1,8 @@
-let a:number =  2 ;
-console.log(`hola alex ${a}`);
+
+
+
+
+
+let a:string = "Hola";
+
+console.log(Object.getPrototypeOf(a));
