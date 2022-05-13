@@ -1,0 +1,29 @@
+¿Qué es una lista enlazada?
+
+una lista enlazada permite representar  u gtupo de elementos presentados como una secuencia.
+
+¿Qué diferencia a una lista enlazada de un Arreglo?
+
+la diferencia radica en el dinamismo.
+
+un array es una estructura extatica mientras una lista enlazada puede aumentar conforme se vaya requiriendo.
+tambien los nodos notienen que gardarse  todos juntos en  memoria, como ocurre con las Arrays
+
+puenden agregar y quitar variables en tiempo de ejecución.
+
+¿Qué es un nodo?
+
+según interprete un node es la caja o el espacio de memoria donde esta podremos almacenar un valor y ese valor tendra  un "apuntador" que puede estar apuntando a otro nodo, de esta menera se crea la secuencia,
+entre esos tenemos un nodo principal que llamamos cabeza,es el unico que tenemos que conocer para trabajar con una lista.
+ lo que no se denomina cabeza de denomina cola, esto se repite desde el elementos en el que estemos situados.
+ el ultimo elemento tambien tiene un apuntador, solo que al ser el ultimo a punta a una lista vacia 
+ 
+ Describa como se agrega un elemento al final de una lista
+
+ segun el ejemplo :
+
+ primero se crea una clase con el nombre addLast que recibe por parametro un dato tipo numbre en este caso
+ luego se pregunta si el dato no es vacio
+  si el dato no es vacia o indefinido    
+    luego pregunta si exite en lista vacia si lista devuelve true lo agrega 
+    DE LO CONTRARIO CREA un nuevo set desde la cabeza

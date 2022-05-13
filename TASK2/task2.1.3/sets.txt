@@ -1,0 +1,9 @@
+ ¿Qué es un set?
+
+ Es un objeto que permite almacenar un conjunto de valores decualquier tipo incluso los valores primitivos.
+
+Indique al menos 2 diferencias entre los Sets y los Arrays.
+
+1) la menera de  instaciar un set es con las palabra reservada new set()
+2) los set son conciderados objeto literales dentro de js, esto da a entender que a diferencia de una array el objeto set tiene sus propios metodos.
+3) la manera de acceder a su valor no es con indices si no con claves.
