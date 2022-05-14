@@ -1,0 +1,20 @@
+¿Qué es una pila?
+
+Es una estructura de datos que opera bajo la modalidad de lIFO(last in first out)
+esto quiere decir que es una estructura de datos unidireccional. Esto es quiere decir que solo ha una manera de agregar y de retirar datos.
+
+¿En qué se diferencia una pila de una cola?
+
+La diferencia radica en la manera en la que estos dos ingresan y retiran los elementos
+sabiendo que una cola retira sus elementos en una modalidad de FIFO (firstin firstout)
+siempre se retira el primero de la fila  y se ingresan agregan al final.
+mientas la pila tabaja en la modalida lifo (last in firstout )
+se elimina el ultimo elemento y se agrega por el incio o frente
+
+¿Cuáles son los métodos de una pila y para qué sirve cada uno?
+
+push: Agrega un nuevo valor a la pila, ubicándolo al final de ésta.
+pop: Retorna el último valor ingresado a la pila, sacándolo de ésta.
+peek: Retorna el último valor ingresado a la pila, sin sacarlo de ésta.
+size: Retorna el número de elementos que contiene la pila.
+print: Muestra el contenido de la pila.

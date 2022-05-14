@@ -1,0 +1,25 @@
+¿Qué es una Cola?
+
+una cola (queue en ingles) es una estructura de datos compuesta, que  se agregan datos al final y se retiran datos por el inico o frente.
+a esto se le conoce como fifo (firstin,fristout)
+
+¿Cuáles son los métodos principales de una cola?
+
+Encolar y desencolar.
+
+Encolar: agrega una dato al final de la cola 
+Encolar : enqueue : Traducido como “encolar”, es el método que debe agregar un elemento a la cola;
+
+desencolar  elimina   el elemneto frontal , es decir el primer elemento
+desencolar:   dequeue : Traducido como “desencolar”
+
+
+
+
+¿Cuál es la diferencia entre una cola y una cola de prioridades?
+
+la diferencia radica en las prioridades. 
+cuando se agraga una data a una cola  tambien se agrega su prioridad
+cuando retiras una elemneto de una cola el retirara el de  mayor prioridad.
+
+
