@@ -5,15 +5,21 @@
   "main": "closures.js",
   "scripts": {
     "tsc": "tsc",
-    "dev":"ts-node-dev TASK2/task2.1/array.ts",
+    "dev": "ts-node-dev TASK2/task2.1/array.ts",
     "dev1": "ts-node-dev TASK2/borrador.ts",
-    "dev2": "ts-node-dev  TASK2/task2.1.7/sumArray.ts"
+    "dev2": "ts-node-dev  TASK2/task2.1.7/sumArray.ts",
+    "dev3": "ts-node-dev  mentoria/mentoria28My.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "ts-node-dev": "^1.1.8",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.36",
+    "ts-node": "^10.8.0",
+    "tslib": "^2.4.0"
   }
 }
