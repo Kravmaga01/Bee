@@ -1,0 +1,27 @@
+.header-social {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.conatact-social {
+    display: flex;
+    justify-content: space-around;
+    flex: auto;
+    flex-wrap: wrap;
+}
+.conatact-social nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conatact-social nav ul li,
+a {
+    margin-right: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
