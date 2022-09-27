@@ -26,7 +26,6 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between ;
-   
 }
 .conatact-social nav ul li,
 a {
@@ -42,7 +41,7 @@ a:hover{
     color: blue;
 }
 
-/**/
+/* *imagen**/
 .imagen-container{
     width: 100%;
 }
@@ -81,6 +80,9 @@ a:hover{
     z-index: 2;   
     text-emphasis: center; 
 }
+.content-on-image{
+    text-shadow: 1px 1px 2px black;
+}
 
 .content-on-image h2{
      min-width: 320px;
@@ -93,6 +95,39 @@ a:hover{
     font-weight: 10%;
     color: rgba(255, 255, 255, 0.991);
 } 
+/**service content**/
+
+.service-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.service-card {
+    display: flex;
+    flex-direction: column;
+    height: 200 px;
+}
+
+/**icons style**/
+.service-card header figure{
+    background-color: rgb(0, 149, 249);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.service-card header figure svg {
+    width: 40px;
+    height: 40px;
+    color: antiquewhite;
+   
+}
 
 
- 
+
