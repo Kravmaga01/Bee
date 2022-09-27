@@ -42,15 +42,25 @@ a:hover{
     color: blue;
 }
 
-
+/**/
 .imagen-container{
     width: 100%;
 }
+
 
 .imagen-container img {
     width: 100%;
     background-size: cover;
     position: relative;
+}
+
+.overley{
+    position: absolute;
+    background: black;
+    opacity: 0.4;
+    width: 100%;
+    z-index: 1;
+    height: 250;
 }
 .imagen-container {
     width: 100%;
@@ -62,18 +72,27 @@ a:hover{
 
 .imagen-container .content-on-image{
     display: flex;
-    width: 50%;
     flex-direction: column;
-    justify-content: center;
+    flex: auto;
     position: absolute;
     top: 1%;
-    right: 40%;
-    z-index: 2;
-    
+    right: 10%;
+    left: 10%;
+    z-index: 2;   
+    text-emphasis: center; 
 }
 
 .content-on-image h2{
      min-width: 320px;
      font-weight: 10%;
+     color: rgb(255, 255, 255);
 } 
+
+.content-on-image p{
+    min-width: 320px;
+    font-weight: 10%;
+    color: rgba(255, 255, 255, 0.991);
+} 
+
+
  
