@@ -7,6 +7,7 @@
     margin-bottom: auto;
     flex: auto;
     min-width: 320px;
+    max-width: 1560px;
 }
 .header-social {
     width:100%;
