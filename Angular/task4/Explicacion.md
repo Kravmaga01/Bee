@@ -2,10 +2,10 @@
 
 <body>
     <main>
-        <h1>Explicación</h1>
-        <header>
-            <img src="" alt="" srcset="">
+     <header>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrpZUHoZUspJrtkZz2uAe9pSHPqSMKAZMew&usqp=CAU" alt="Angular" width="200px" height="200px">
         </header>
+        <h1>Explicación</h1>
         <section>
             <header>
                 <h2>SPA</h2>
@@ -104,6 +104,7 @@
         </section>
     </main>
     <footer>
+    <br/>
     <span>Kravmaga01</span>
     </footer>
 </body>
