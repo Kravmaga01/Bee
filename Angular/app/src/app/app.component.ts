@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  img = 'https://thecatapi.com/api/images/get?format=src&type=gif?results_per_page=';
 }
