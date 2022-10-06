@@ -21,9 +21,9 @@
         </section>
         <section>
             <header>
-                <h1>
+                <h2>
                     Estructura y flujo
-                </h1>
+                </h2>
             </header>
             <p>
                 En el video podemos notar que si intenta explicar el flujo de ejecución de una aplicación inicial.
@@ -41,12 +41,12 @@
         </section>
         <section>
             <header>
-                <h1>Componentes y selector</h1>
+                <h2>Componentes y selector</h2>
             </header>
             <p>
-                En el video noes explican como utilizar los componentes que tenemos en el componente principal.
+                En el video noes explican como utilizar los componentes  principales y las propiedades.
                 En el ejemplo podemos ver que utilizamos el código modificado con anterioridad en otro vídeo en el cual
-                solo contamos con el componente title.
+                solo contamos la propiedad title  que se encuentra dentro del componente de la clase Appcomponent.
                 En el video creamo un cambio en el <strong>index.hmtl</strong>, este index contiene el selctor por
                 defecto
             <pre>
@@ -63,7 +63,8 @@
                     <code>
                         import {compnent} from '@angular/core';
                         @compnent({
-                            selector:'app-root', // aqui se nota que el selector sigue siendo app-root
+                            selector:'app-root', //TODO: modificar 
+                            selector sigue siendo app-root
                             templateUrl:'./app.component.html',
                             styleUris:['-/app.component.css']
                         })
@@ -78,7 +79,8 @@
                     <code>
                         import {compnent} from '@angular/core';
                         @compnent({
-                            selector:'app-raiz', // aqui se nota que el selector sigue siendo app-root
+                            selector:'app-raiz', // modificado
+                            selector sigue siendo app-root
                             templateUrl:'./app.component.html',
                             styleUris:['-/app.component.css']
                         })
@@ -86,7 +88,8 @@
                             title = 'miprimeraApp'
                         }
                     </code>
-                    tambiem podemos agregar nuevos componentes personalizados en la calses Appcomponet
+                    también podemos agregar nuevos prapidades
+                    personalizados en la calses Appcomponet
                     <pre>
                         <code>
                             import {compnent} from '@angular/core';
