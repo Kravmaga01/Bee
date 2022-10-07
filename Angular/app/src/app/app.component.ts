@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  counter = 0;
+  increment(){
+    this.counter++;
+  }
+  decrement(){
+    this.counter--;
+  }
+
+  reset(){
+    this.counter = 0;
+  }
 }
