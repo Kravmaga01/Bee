@@ -1,8 +1,8 @@
 <section>
   <article>
     <input type="number" min="0" max="50" [(ngModel)]="counter">
-    <button class="buttonPlusMinus" (click)="increment()">+</button>
-    <button class="buttonPlusMinus" (click)="decrement()">-</button>
-    <button class="buttonCancel"    (click)="reset()">Reiniciar</button>
+    <button *ngIf="50>counter"  class="buttonPlusMinus" (click)="increment()">+</button>
+    <button *ngIf="counter>0"   class="buttonPlusMinus" (click)="decrement()">-</button>
+    <button  class="buttonCancel" (click)="reset()">Reiniciar</button>
   </article>
 </section>
