@@ -1,0 +1,40 @@
+section {
+  background-color: #ccc;
+  padding: 20px;
+}
+.container {
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  .sidebar {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #ccc;
+    list-style: none;
+    li {
+      display: inline-block;
+      border: solid 1px black;
+    }
+  }
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background: #f00;
+  }
+  .sidebar & {
+    background: green;
+    padding: 5px 15px;
+    &:hover {
+      background: orange;
+    }
+  }
+}
