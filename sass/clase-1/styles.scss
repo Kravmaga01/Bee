@@ -32,13 +32,13 @@ button {
   color: white;
   cursor: pointer;
   &:hover {
-    background: darken($color: #000000, $amount: 0);
+    background: darken($color: #0000ff, $amount: 20%);
   }
   .sidebar & {
     background: green;
     padding: 5px 15px;
     &:hover {
-      background: orange;
+      background: lighten($color: #008000, $amount: 10%);
     }
   }
 }

@@ -30,12 +30,12 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: black;
+  background: #000099;
 }
 .sidebar button {
   background: green;
   padding: 5px 15px;
 }
 .sidebar button:hover {
-  background: orange;
+  background: #00b300;
 }/*# sourceMappingURL=styles.css.map */
