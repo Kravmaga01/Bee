@@ -1,12 +1,11 @@
-<h1>Home Componente</h1>
-<hr>
+<section class="container">
+    <article class="d-flex justify-content-center  align-items-center flex-column">
 
-<h3>{{nombre}}</h3>
+        <app-childer-header></app-childer-header>
 
-<button class="btn btn-primary" (click)="cambiarNombre()">
-    cambiar Nombre
-</button>
+        <app-children-footer></app-children-footer>
 
-<hr>
+    </article>
 
-<app-hijo [nombreHijo]="nombre" (cambioNombrehijo)="hijoCambioNombre( $event )"></app-hijo>
+
+</section>

@@ -14,11 +14,11 @@ export class HomeComponent implements OnInit {
 
   public cambiarNombre(): void {
     this.nombre = 'edward';
-    this.dataService.nombreUsuario = this.nombre;
+    this.dataService.heroeNombre = this.nombre;
   }
 
   public hijoCambioNombre(nuevoNombre: string): void {
     this.nombre = nuevoNombre;
-    this.dataService.nombreUsuario = nuevoNombre;
+    this.dataService.heroeNombre = nuevoNombre;
   }
 }
