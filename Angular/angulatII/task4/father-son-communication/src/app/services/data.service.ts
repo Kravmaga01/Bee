@@ -1,10 +1,15 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
-  constructor() {}
+  constructor(public http: HttpClient) {}
+
+  getHeroes() {
+    return this.http.get('https://api.disneyapi.dev/characters');
+  }
 
   public heroes = [
     {

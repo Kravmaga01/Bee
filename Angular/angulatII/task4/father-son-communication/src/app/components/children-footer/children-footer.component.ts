@@ -6,12 +6,7 @@ import { DataService } from '../../services/data.service';
   templateUrl: './children-footer.component.html',
   styleUrls: ['./children-footer.component.scss'],
 })
-export class ChildrenFooterComponent {
+export class ChildrenFooterComponent implements OnInit {
   constructor(public dataService: DataService) {}
-  cambiarHeroe(): void {
-    this.dataService.heroeNombre = 'alexander';
-    this.dataService.heroeImagen = 'Nuevaimagen';
-  }
-
-  retornarHeroe() {}
+  ngOnInit(): void {}
 }

@@ -5,6 +5,9 @@ import { DataService } from '../../services/data.service';
   selector: 'app-childer-header',
   templateUrl: './childer-header.component.html',
 })
-export class ChilderHeaderComponent {
+export class ChilderHeaderComponent implements OnInit {
   constructor(public dataService: DataService) {}
+  ngOnInit(): void {
+    this.dataService;
+  }
 }

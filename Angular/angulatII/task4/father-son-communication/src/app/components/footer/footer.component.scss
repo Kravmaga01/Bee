@@ -1,0 +1,14 @@
+.cardHeroes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  & img {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+  }
+}
+.aling-text {
+  text-align: center;
+}

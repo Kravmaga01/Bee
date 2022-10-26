@@ -1,0 +1,27 @@
+<hr>
+
+
+
+<h2 class="aling-text"> PipesHeroes</h2>
+<div class="album py-5 bg-light ">
+
+    <section class="container radiusBorder">
+        <br />
+        <h3>Filtro de personajes sin series</h3>
+        <br />
+        <article class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            <section class="cardHeroes" *ngFor="let hero of heroeslist.data | puro">
+                <img src="{{hero.imageUrl}}" alt="heroeImagen" width="100%" height="50px">
+
+                <footer>
+                    <p>Nombre: {{hero!.name| uppercase}}</p>
+                    <p>Serie: {{hero!.tvShows}}</p>
+                </footer>
+            </section>
+
+        </article>
+
+    </section>
+
+</div>
