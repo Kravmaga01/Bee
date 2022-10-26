@@ -8,7 +8,7 @@ import { DataService } from '../../services/data.service';
 })
 export class FooterComponent implements OnInit {
   public heroeslist: any = [];
-  public inputSeries: number = 0;
+  public inputSeries: number = 1;
   constructor(public readonly dataService: DataService) {}
   ngOnInit(): void {
     this.dataService

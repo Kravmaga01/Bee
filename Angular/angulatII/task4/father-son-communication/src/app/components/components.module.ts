@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { ImpuroPipe } from '../pipes/impuro/impuro.pipe';
 import { PuroPipe } from '../pipes/puros/puro.pipe';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -18,7 +19,7 @@ import { PuroPipe } from '../pipes/puros/puro.pipe';
     PuroPipe,
     ImpuroPipe,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   exports: [
     NavbarComponent,
     HijoComponent,

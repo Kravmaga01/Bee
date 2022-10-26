@@ -7,8 +7,13 @@ import { ModelHero } from '../../components/interfaces/hero.interface';
 })
 export class ImpuroPipe implements PipeTransform {
   transform(heroe: ModelHero[], filterBy: number) {
+    console.log(
+      heroe.filter((e) => {
+        e.tvShows.length;
+      })
+    );
     return heroe.filter((e) => {
-      e.tvShows.length === filterBy;
+      return e.tvShows.length === filterBy;
     });
   }
 }
