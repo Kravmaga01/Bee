@@ -13,7 +13,10 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class AuthGuard implements CanActivate {
-  constructor(private router: Router) {}
+  constructor(
+    private readonly router: Router,
+    private readonly authService: AuthService
+  ) {}
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
@@ -22,9 +25,6 @@ export class AuthGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    if (!this.isLogin()) {
-      return this.router.navigate(['/login']).then(() => false);
-    }
-    return true;
+    return false;
   }
 }
