@@ -1,0 +1,11 @@
+<p>countries works!</p>
+<button (click)="goToRoot()">Ir a la raíz </button>
+<button (click)="goCities()">Ir a la cities </button>
+
+<router-outlet></router-outlet>
+
+<ul *ngIf="countries$ | async as countries">
+    <li *ngFor="let country of countries">
+        {{country.name.common}}
+    </li>
+</ul>

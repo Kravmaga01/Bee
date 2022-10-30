@@ -10,6 +10,6 @@ export class AppComponent {
   constructor(private readonly router: Router) {}
   title = 'auth-guards';
   goToCountries(): void {
-    this.router.navigate(['countries', 5, 'medellín']);
+    this.router.navigate(['countries']);
   }
 }
